@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="HRRN.css">
+
+    <script src="HRRN.js" defer></script>
+    <title>HRRN-Calculation</title>
+</head>
+
+<body>
+    <header class="header">
+        <h2>Highest Response Ratio Next (HRRN) Calculation</h2>
+    </header>
+
+    <div class="fill-in">
+        <div class="case">
+            <button id="Notime" class="grob">Non-Preemptive</button>
+            <button id="time">Preemptive</button>
+        </div>
+
+        Arrival Time <input placeholder="1 2 3 4" type="text" class="Arrival_Time" name="AT"></input><br>
+
+        Burst Time <input placeholder="1 2 3 4" type="text" class="Burst_Time" name="BS"></input><br>
+
+        <div class="hidden" id="timeinput">
+            Time <input placeholder="1-100" type="text" class="Ctime" name="CT"></input><br>
+        </div>
+
+        <button type="button" name="button" onclick="getVal()">Submit</button>
+    </div>
+
+    <table></table>
+    
+    <div class="hidden" id="hden">
+        <div id="Ctime"></div>
+        <ul id="pree"></ul>
+    </div>
+
+    <div id="Nextprocess"></div>
+
+</body>
+
+</html>
